@@ -45,7 +45,7 @@ public class Hunter {
     /**
      * @technique: Breadth-First Search Traversal
      * @futureImplementation: Use Concurrency. BFS & Concurrency is tricky though because the queue could be empty, but
-     * the traversal is not actually complete. What will be the source of truth in that case?
+     * the traversal could not be complete. What will be the source of truth in that case?
      */
     //@Scheduled(cron = "${hunter.cron}", zone = "GMT+1")
     @Scheduled(fixedDelay = 900000)
