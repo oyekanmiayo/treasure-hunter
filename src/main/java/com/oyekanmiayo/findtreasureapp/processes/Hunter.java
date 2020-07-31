@@ -48,7 +48,7 @@ public class Hunter {
      * the traversal could not be complete. What will be the source of truth in that case?
      */
     //@Scheduled(cron = "${hunter.cron}", zone = "GMT+1")
-    @Scheduled(fixedDelay = 900000)
+    @Scheduled(fixedDelay = 9000000000)
     public void findTreasure() {
         int counter = 0;
         Set<String> visited = new HashSet<>();
