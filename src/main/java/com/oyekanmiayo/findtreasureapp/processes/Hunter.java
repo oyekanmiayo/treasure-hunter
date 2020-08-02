@@ -1,6 +1,8 @@
 package com.oyekanmiayo.findtreasureapp.processes;
 
 import com.oyekanmiayo.findtreasureapp.entities.FTResponse;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,8 +49,7 @@ public class Hunter {
      * @futureImplementation: Use Concurrency. BFS & Concurrency is tricky though because the queue could be empty, but
      * the traversal is not actually complete. What will be the source of truth in that case?
      */
-    //@Scheduled(cron = "${hunter.cron}", zone = "GMT+1")
-    @Scheduled(fixedDelay = 900000)
+
     public void findTreasure() {
         int counter = 0;
         Set<String> visited = new HashSet<>();

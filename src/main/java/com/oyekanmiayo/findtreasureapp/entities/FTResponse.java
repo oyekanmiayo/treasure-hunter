@@ -13,6 +13,4 @@ import lombok.NoArgsConstructor;
 public class FTResponse {
     @JsonProperty("paths")
     String[] paths;
-//    @JsonProperty("treasures")
-//    TreasureDetails[] treasures;
 }

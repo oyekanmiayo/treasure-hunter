@@ -188,4 +188,7 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 
+.DS_Store
+*.DS_Store
+*/.DS_Store
 # End of https://www.toptal.com/developers/gitignore/api/intellij,java,maven,git
