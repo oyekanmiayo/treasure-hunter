@@ -1,14 +1,11 @@
 package com.oyekanmiayo.findtreasureapp.processes;
 
 import com.oyekanmiayo.findtreasureapp.entities.FTResponse;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
@@ -47,9 +44,8 @@ public class Hunter {
     /**
      * @technique: Breadth-First Search Traversal
      * @futureImplementation: Use Concurrency. BFS & Concurrency is tricky though because the queue could be empty, but
-     * the traversal is not actually complete. What will be the source of truth in that case?
+     * the traversal could not be complete. What will be the source of truth in that case?
      */
-
     public void findTreasure() {
         int counter = 0;
         Set<String> visited = new HashSet<>();
